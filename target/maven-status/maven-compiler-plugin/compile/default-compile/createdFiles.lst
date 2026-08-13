@@ -1,0 +1,9 @@
+in\Student\CURD\controller\StudentController.class
+in\Student\CURD\repository\StudentRepository.class
+in\Student\CURD\CurdApplication.class
+in\Student\CURD\exception\GlobalExceptionHandler.class
+in\Student\CURD\service\StudentService.class
+in\Student\CURD\model\Student.class
+in\Student\CURD\exception\ResourceNotFoundException.class
+in\Student\CURD\service\impl\StudentServiceImpl.class
+in\Student\CURD\exception\GlobalExceptionHandler$ErrorResponse.class
