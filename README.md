@@ -48,6 +48,7 @@ A RESTful API for managing student records built with Spring Boot, Spring Data J
 
 **Create Student:**
 ```json
+
 POST /api/students
 {
   "rollno": "S001",
@@ -55,6 +56,8 @@ POST /api/students
   "email": "amruta@example.com",
   "age": 21
 }
+
+
 Response:
 
 json
@@ -65,8 +68,11 @@ json
   "email": "amruta@example.com",
   "age": 21
 }
+
 🗄️ Database Schema
+
 sql
+
 CREATE TABLE student (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
     rollno VARCHAR(50) UNIQUE NOT NULL,
@@ -74,38 +80,49 @@ CREATE TABLE student (
     email VARCHAR(255) UNIQUE NOT NULL,
     age INT NOT NULL
 );
+
+
 🚀 Getting Started
+
 Prerequisites
+
 Java 17+
-
 MySQL 8.0+
-
 Maven
 
 Steps
+
 Clone the repository
 
 bash
+
 git clone https://github.com/yourusername/student-management-api.git
+
 Create database
 
 sql
+
 CREATE DATABASE student_crud_db;
+
 Update application.properties with your MySQL password
 
 Build and run
 
 bash
+
 mvn clean install
 mvn spring-boot:run
+
 Test the API
 
 bash
+
 curl http://localhost:8080/api/students
 
 🧪 Testing with cURL
 
 bash
+
 # Create student
 curl -X POST http://localhost:8080/api/students \
   -H "Content-Type: application/json" \
@@ -127,6 +144,7 @@ curl -X DELETE http://localhost:8080/api/students/1
 
 
 📁 Project Structure
+
 text
 src/
 ├── main/
@@ -144,10 +162,13 @@ src/
 
 
 📊 Error Handling
+
 Exception	Status
 ResourceNotFoundException	404 Not Found
 MethodArgumentNotValidException	400 Bad Request
 Exception	500 Internal Server
+
+
 Error Response:
 
 json
@@ -160,6 +181,8 @@ json
 
 
 🚀 Future Enhancements
+
+
 □ Add JWT Authentication
 □ Implement Swagger/OpenAPI
 □ Add Unit Tests
