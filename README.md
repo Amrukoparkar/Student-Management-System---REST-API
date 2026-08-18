@@ -95,39 +95,42 @@ Java 17+
 MySQL 8.0+
 Maven
 
-Steps
+Steps:
 
-Clone the repository
+1) Clone the repository
 
 bash
-
+```json
 git clone https://github.com/yourusername/student-management-api.git
+```
 
-Create database
+2) Create database
 
 sql
-
+```json
 CREATE DATABASE student_crud_db;
+```
 
-Update application.properties with your MySQL password
+3) Update application.properties with your MySQL password
 
-Build and run
+4) Build and run
 
 bash
-
+```json
 mvn clean install
 mvn spring-boot:run
-
-Test the API
+```
+5) Test the API
 
 bash
-
+```json
 curl http://localhost:8080/api/students
+```
 
 🧪 Testing with cURL
 
 bash
-
+```json
 # Create student
 curl -X POST http://localhost:8080/api/students \
   -H "Content-Type: application/json" \
@@ -147,7 +150,7 @@ curl -X PUT http://localhost:8080/api/students/1 \
 # Delete student
 curl -X DELETE http://localhost:8080/api/students/1
 
-
+```
 📁 Project Structure
 
 text
@@ -175,7 +178,7 @@ Exception	500 Internal Server
 
 
 Error Response:
-
+```json
 json
 {
   "status": 404,
@@ -183,7 +186,7 @@ json
   "timestamp": "2026-08-13T14:00:00",
   "details": "uri=/api/students/1"
 }
-
+```
 
 🚀 Future Enhancements
 
