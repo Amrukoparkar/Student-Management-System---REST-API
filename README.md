@@ -61,7 +61,7 @@ POST /api/students
 
 Response:
 
-json
+```json
 {
   "id": 1,
   "rollno": "S001",
@@ -69,10 +69,13 @@ json
   "email": "amruta@example.com",
   "age": 21
 }
+```
 
 🗄️ Database Schema
 
 sql
+
+```json
 
 CREATE TABLE student (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
@@ -81,6 +84,7 @@ CREATE TABLE student (
     email VARCHAR(255) UNIQUE NOT NULL,
     age INT NOT NULL
 );
+```
 
 
 🚀 Getting Started
