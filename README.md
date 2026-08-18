@@ -152,7 +152,7 @@ curl -X DELETE http://localhost:8080/api/students/1
 
 ```
 📁 Project Structure
-
+```json
 text
 src/
 ├── main/
@@ -167,7 +167,7 @@ src/
 │   │       └── GlobalExceptionHandler.java
 │   └── resources/application.properties
 └── test/
-
+```
 
 📊 Error Handling
 
