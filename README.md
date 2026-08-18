@@ -47,9 +47,10 @@ A RESTful API for managing student records built with Spring Boot, Spring Data J
 ### Example Request
 
 **Create Student:**
-```json
+
 
 POST /api/students
+
 {
   "rollno": "S001",
   "name": "Amruta Koparkar",
