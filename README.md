@@ -201,8 +201,8 @@ json
 
 🤝 Connect
 
-📧 Email: amrutakoparkar1@gmail.com
-🔗 LinkedIn: www.linkedin.com/in/amruta-koparkar-415862294
+<p>📧 Email: amrutakoparkar1@gmail.com</p>
+<p>🔗 LinkedIn: www.linkedin.com/in/amruta-koparkar-415862294</p>
 
 
 ⭐ Support
